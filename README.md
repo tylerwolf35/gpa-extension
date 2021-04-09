@@ -20,6 +20,7 @@ Currently the only courses that this works with without 5 credits are:
 * Health
 * Safety
 * Physical Ed
+
 This means that other half year courses and etc. are not supported. I plan on adding support for all <5 credit courses offered in the district. If a course you have is not here please make an issue telling me the exact name of the course in the gradebook or create a pull request adding it, I will review all pull requests.
 
 I would also like to make a (better) icon for this extension.
