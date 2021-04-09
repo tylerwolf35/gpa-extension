@@ -9,7 +9,7 @@
   ],
   "content_scripts": [
     {
-      "matches": ["https://parents.frhsd.com/genesis/parents?tab1=studentdata&tab2=gradebook&tab3=*"],
+      "matches": ["https://parents.frhsd.com/genesis/parents?tab1=studentdata&tab2=gradebook&tab3=weeklysummary"],
       "js": ["./src/jquery.min.js", "./src/content-script.js"],
       "run_at": "document_end"
 
