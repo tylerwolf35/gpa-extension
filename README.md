@@ -1,8 +1,13 @@
 # FRHSD GPA Calculator Browser Extension
-Browser extension that calculates GPA from Parent Portal for FRHSD students
+This is a browser extension that calculates GPA from Parent Portal for FRHSD students. This extension is compatible with both Firefox and Chrome.
+
+## How do I install this?
+Firefox: To install this addon for Firefox you may uninstall it unpacked through the debug setting in the addons settings. I have submitted this extension to Mozilla for review and once approved it will be available at https://addons.mozilla.org/en-US/firefox/addon/frhsd-gpa-calculator/, I will provide an update when I get a response.
+
+Chrome: To install this addon for Chrome you must install it as an unpacked extension. I have submitted this extension to the Chrome Web Store for review. I will provide an update when I get a response.
 
 ## What does this do?
-While on the gradebook page of the parent portal, this extension will calculate your GPA of the selected marking period weighted by the guidelines in the FRHSD Student Handbook. A manual entry calculator for calculating your GPA is also built in to the extension if you would like to calculate your entire GPA.
+While on the gradebook page of the parent portal, this extension will calculate your GPA of the selected marking period weighted by the guidelines in the FRHSD Student Handbook. A manual entry calculator for calculating your GPA is also built in to the extension if you would like to calculate your entire GPA. More info on the calculator can be found here: https://github.com/tylerwolf35/gpa/blob/main/README.md.
 
 ## How does this work?
 This extension works by retrieving your letter grade in each course by going into the correct spot in the table and finding the name of all of the courses and of the grades and storing these values in arrays. The amount of credits the course is worth is also assigned using an array based on determining if the name of the course is equal to that of a course which is not worth the usual 5 credits.
@@ -16,3 +21,5 @@ Currently the only courses that this works with without 5 credits are:
     * Safety
     * Physical Ed
 This means that other half year courses and etc. are not supported. I plan on adding support for all <5 credit courses offered in the district. If a course you have is not here please make an issue telling me the exact name of the course in the gradebook or create a pull request adding it, I will review all pull requests.
+
+I would also like to make a (better) icon for this extension.

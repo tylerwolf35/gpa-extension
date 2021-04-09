@@ -7,7 +7,6 @@
   "permissions": [
     "activeTab"
   ],
-  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
   "content_scripts": [
     {
       "matches": ["https://parents.frhsd.com/genesis/parents?tab1=studentdata&tab2=gradebook&tab3=*"],
