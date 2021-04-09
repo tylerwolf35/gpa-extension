@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "FRHSD GPA Calculator",
+  "description": "FRHSD GPA Calculator",
+  "version": "1.0",
+  "author": "Tyler Wolf",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+  "content_scripts": [
+    {
+      "matches": ["https://parents.frhsd.com/genesis/parents?tab1=studentdata&tab2=gradebook&tab3=*"],
+      "js": ["./src/jquery.min.js", "./src/content-script.js"],
+      "run_at": "document_end"
+
+    }
+],
+  "browser_action": {
+    "default_icon": "./images/icon.png",
+    "default_title": "FRHSD GPA Calculator",
+    "default_popup": "./popup.html"
+    }
+}
