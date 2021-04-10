@@ -48,23 +48,22 @@ $(function () {
     if(halfYear.some(course => courses[i].includes(course))){
       credits.push("2.5");
       total_credits += 2.5;
-      console.log(courses[i]+": 2.5");
+      console.log("Added "+courses[i]+" worth 2.5 credits.");
     }
     else if(health.some(course => courses[i].includes(course))){
       credits.push("1.25");
       total_credits += 1.25;
-      console.log(courses[i]+": 1.25");
+      console.log("Added "+courses[i]+" worth 1.25 credits.");
     }
     else if(physEd.some(course => courses[i].includes(course))){
       credits.push("3.75");
       total_credits += 3.75;
-      console.log(courses[i]+": 3.75");
-
+      console.log("Added "+courses[i]+" worth 3.75 credits.");
     }
     else{
       credits.push("5");
       total_credits += 5;
-      console.log(courses[i]+": 5");
+      console.log("Added "+courses[i]+" worth 5 credits.");
     }
   }
 
