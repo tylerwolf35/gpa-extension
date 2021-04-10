@@ -10,9 +10,10 @@ $(function () {
     "C+":"4.1","C":"3.8","C-":"3.5","D+":"3.1","D":"2.8","E":"0.0"
   };
 
-  const halfYear = ["Financial Literacy", "AP Macro", "AP Micro"];
+  const halfYear = ["Financial Literacy", "AP Macro", "AP Micro", "Business Law", "Business Management",
+    "Digital Business Tools", "Sports", "Popular Music", "Sociology", "Music SL", "Music HL"];
 
-  const health = ["Health", "Safety"];
+  const health = ["Health", "Safety", "Theory of Knowledge"];
 
   const physEd = ["Physical Ed"];
 
