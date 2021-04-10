@@ -1,5 +1,6 @@
 /*jshint esversion: 6 */
 $(function () {
+  // set up grade values
   const academic = {"A+":"4.6","A":"4.3","A-":"4.0","B+":"3.6","B":"3.3","B-":"3.0",
     "C+":"2.6","C":"2.3","C-":"2.0","D+":"1.6","D":"1.3","E":"0.0"
   };
@@ -10,6 +11,7 @@ $(function () {
     "C+":"4.1","C":"3.8","C-":"3.5","D+":"3.1","D":"2.8","E":"0.0"
   };
 
+  // set up courses
   const halfYear = ["Financial Literacy", "AP Macro", "AP Micro", "Business Law", "Business Management",
     "Digital Business", "Sports", "Popular Music", "Sociology", "Music SL", "Music HL"];
 
@@ -17,8 +19,10 @@ $(function () {
 
   const physEd = ["Physical Ed"];
 
+  // get courses
   const grades_and_classes = $("table[class='list']")[0].rows;
 
+  // initialize variables
   let grades = [];
   let courses = [];
   let credits = [];
@@ -26,15 +30,16 @@ $(function () {
   let total_credits = 0;
   let qualityPoints = 0;
 
+  // check if course has valid grades
   const ifValid = (name, grade) => {
     return (
       grade.indexOf("No Grades") == -1 &&
       grade.indexOf("Not Graded") == -1 &&
-      grade.indexOf("Missing") == -1 &&
       grade.length > 0
     );
   };
 
+  // get letter value of grade
   for(let i = 1; i < grades_and_classes.length; i++) {
     let name = grades_and_classes[i].cells[0].innerText;
     let grade = grades_and_classes[i].cells[3].innerText.replace(/[^A-F+-]/g, '');
@@ -44,6 +49,7 @@ $(function () {
     }
   }
 
+  // check how many credits course is worth
   for(let i = 0; i < courses.length; i+=1){
     if(halfYear.some(course => courses[i].includes(course))){
       credits.push("2.5");
@@ -67,6 +73,7 @@ $(function () {
     }
   }
 
+  // check course level
   for(let i = 0; i < courses.length; i+=1){
     if((courses[i].indexOf("AP") > -1) || (courses[i].indexOf("IB") > -1)){
       gpas.push(advanced[grades[i]]);
@@ -79,12 +86,13 @@ $(function () {
     }
   }
 
+  // calculate gpa
   for(let i = 0; i < courses.length; i+=1){
     qualityPoints += gpas[i] * credits[i];
   }
-
   let gpa = qualityPoints / total_credits;
 
+  // add gpa to page
   let html = '<h1 id="gpa" style="color:#ffffff;background-color:#222222;height:10px;text-align:center;line-height:100px;width:50px;margin:0 auto;margin-top:10px;  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);"> GPA: ';
   html += gpa.toFixed(3);
   html += "</h1>";
