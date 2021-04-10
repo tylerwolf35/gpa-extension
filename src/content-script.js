@@ -69,7 +69,7 @@ $(function () {
   }
 
   for(let i = 0; i < courses.length; i+=1){
-    if(courses[i].indexOf("AP") > -1){
+    if((courses[i].indexOf("AP") > -1) || (courses[i].indexOf("IB") > -1)){
       gpas.push(advanced[grades[i]]);
     }
     else if((courses[i].indexOf("Honors") > -1) || (courses[i].indexOf("Advanced") > -1)){
