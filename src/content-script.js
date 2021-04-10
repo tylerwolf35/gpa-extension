@@ -45,27 +45,26 @@ $(function () {
   }
 
   for(let i = 0; i < courses.length; i+=1){
-    if(halfYear.indexOf(courses[i]) > -1){
+    if(halfYear.some(course => courses[i].includes(course))){
       credits.push("2.5");
       total_credits += 2.5;
-      console.log(courses[i]);
+      console.log(courses[i]+": 2.5");
     }
-    else if(health.indexOf(courses[i]) > -1){
+    else if(health.some(course => courses[i].includes(course))){
       credits.push("1.25");
       total_credits += 1.25;
-      console.log(courses[i]);
-
+      console.log(courses[i]+": 1.25");
     }
-    else if(physEd.indexOf(courses[i]) > -1){
+    else if(physEd.some(course => courses[i].includes(course))){
       credits.push("3.75");
       total_credits += 3.75;
-      console.log(courses[i]);
+      console.log(courses[i]+": 3.75");
 
     }
     else{
       credits.push("5");
       total_credits += 5;
-      console.log(courses[i]);
+      console.log(courses[i]+": 5");
     }
   }
 
