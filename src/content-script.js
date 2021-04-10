@@ -11,7 +11,7 @@ $(function () {
   };
 
   const halfYear = ["Financial Literacy", "AP Macro", "AP Micro", "Business Law", "Business Management",
-    "Digital Business Tools", "Sports", "Popular Music", "Sociology", "Music SL", "Music HL"];
+    "Digital Business", "Sports", "Popular Music", "Sociology", "Music SL", "Music HL"];
 
   const health = ["Health", "Safety", "Theory of Knowledge"];
 
