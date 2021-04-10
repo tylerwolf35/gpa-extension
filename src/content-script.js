@@ -87,8 +87,6 @@ $(function () {
 
   let gpa = qualityPoints / total_credits;
 
-  $("p[style='text-align: center']").remove();
-  $("#gpa").remove();
   let html = '<h1 id="gpa" style="color:#ffffff;background-color:#222222;height:10px;text-align:center;line-height:100px;width:50px;margin:0 auto;margin-top:10px;  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);"> GPA: ';
   html += gpa.toFixed(3);
   html += "</h1>";
@@ -97,5 +95,5 @@ $(function () {
     gpaDiv = $("#gpa");
     gpaDiv.animate({height: '100px', opacity: '0.6'}, "slow");
     gpaDiv.animate({width: '250px', opacity: '1'}, "fast");
-    }, 1500);
+    }, 0);
 });

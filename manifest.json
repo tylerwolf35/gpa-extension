@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "FRHSD GPA Calculator",
   "description": "FRHSD GPA Calculator",
-  "version": "1.1",
+  "version": "1.2",
   "author": "Tyler Wolf",
   "permissions": [
     "activeTab"
