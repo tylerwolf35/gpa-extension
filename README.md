@@ -1,6 +1,8 @@
 # FRHSD GPA Calculator Browser Extension
 This is a browser extension that calculates GPA from Parent Portal for FRHSD students. This extension is compatible with both the latest versions of Firefox and Chrome.
 
+Notice: This extension hasn't been updated in a while so it doesn't work with the new parent portal. This has been changed in this repo and it should be pushed out to the extension stores soon.
+
 ## How do I install this?
 Firefox: You can install this addon directly from Mozilla: https://addons.mozilla.org/en-US/firefox/addon/frhsd-gpa-calculator/.
 
