@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "FRHSD GPA Calculator",
   "description": "Calculate your GPA from the FRHSD parent portal",
-  "version": "1.3",
+  "version": "2.0",
   "author": "Tyler Wolf",
   "permissions": [
     "activeTab"
@@ -10,7 +10,7 @@
   "content_scripts": [
     {
       "matches": ["https://parents.c1.genesisedu.net/freeholdregional/parents?tab1=studentdata&tab2=gradebook&tab3=weeklysummary&*"],
-      "js": ["./src/jquery.min.js", "./src/content-script.js"],
+      "js": ["./src/jquery.min.js", "./src/calculate.js"],
       "run_at": "document_end"
 
     }
