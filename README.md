@@ -7,7 +7,7 @@ Firefox: You can install this addon directly from Mozilla: https://addons.mozill
 Chrome: You can install this extension from the Chrome store: https://chrome.google.com/webstore/detail/frhsd-gpa-calculator/akdabagianlhaniaogchhfhjegekmkeo (Chrome store is currently outdated)
 
 ## What does this do?
-While on the gradebook page of the parent portal, this extension will calculate your GPA of the selected marking period weighted by the guidelines in the [FRHSD Student Handbook](https://www.straussesmay.com/seportal/Public/DistrictPolicy.aspx?policyid=2624&search=2624&id=7858262563e847ff8c696a5498430f85).
+While on the gradebook page of the parent portal, this extension will calculate your GPA of the selected marking period weighted by the guidelines in the [FRHSD Student Handbook](https://www.frhsd.com/Page/402).
 
 ## How does this work?
 This extension works by retrieving your letter grade in each course by going into the correct spot in the table and finding the name of all of the courses and of the grades and storing these values in arrays. The amount of credits the course is worth is also assigned using an array based on determining if the name of the course is equal to that of a course which is not worth the usual 5 credits.
