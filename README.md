@@ -4,7 +4,7 @@
 ## How do I install this?
 Firefox: You can install this addon directly from Mozilla: https://addons.mozilla.org/en-US/firefox/addon/frhsd-gpa-calculator/
 
-Chrome: You can install this extension from the Chrome store: https://chrome.google.com/webstore/detail/frhsd-gpa-calculator/akdabagianlhaniaogchhfhjegekmkeo (Chrome store is currently outdated)
+Chrome: You can install this extension from the Chrome store: https://chrome.google.com/webstore/detail/frhsd-gpa-calculator/akdabagianlhaniaogchhfhjegekmkeo (Chrome store is currently outdated, for up to date version install from releases)
 
 ## What does this do?
 While on the gradebook page of the parent portal, this extension will calculate your GPA of the selected marking period weighted by the guidelines in the [FRHSD Student Handbook](https://www.frhsd.com/Page/402).
