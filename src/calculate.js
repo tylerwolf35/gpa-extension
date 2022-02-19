@@ -1,4 +1,3 @@
-/*jshint esversion: 6 */
 $(function () {
   // set up grade values
   const academic = {"A+":"4.6","A":"4.3","A-":"4.0","B+":"3.6","B":"3.3","B-":"3.0",
