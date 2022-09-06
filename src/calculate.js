@@ -41,7 +41,7 @@ $(function () {
   // get letter value of grade
   for(let i = 1; i < grades_and_classes.length; i++) {
     let name = grades_and_classes[i].cells[0].innerText;
-    let grade = grades_and_classes[i].cells[2].innerText.replace(/[^A-F+-]/g, '');
+    let grade = grades_and_classes[i].cells[3].innerText.replace(/[^A-F+-]/g, '');
     if(ifValid(name, grade)) {
       courses.push(name);
       grades.push(grade);
@@ -92,5 +92,5 @@ $(function () {
   let gpa = qualityPoints / total_credits;
 
   // add gpa to page
-  grades_and_classes[0].cells[2].innerHTML += "<br>GPA: " + gpa.toFixed(2);
+  grades_and_classes[0].cells[3].innerHTML += "<br>GPA: " + gpa.toFixed(2);
 });
