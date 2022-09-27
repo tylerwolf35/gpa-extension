@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "FRHSD GPA Calculator",
   "description": "Calculate your GPA from the FRHSD parent portal",
-  "version": "2.2",
+  "version": "2.3",
   "author": "Tyler Wolf",
   "permissions": [
     "activeTab"
