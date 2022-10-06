@@ -74,7 +74,7 @@ $(function () {
 
   // check course level
   for(let i = 0; i < courses.length; i+=1){
-    if((courses[i].indexOf("AP") > -1) || (courses[i].indexOf("IB") > -1)){
+    if((courses[i].indexOf("AP") > -1) || ((courses[i].indexOf("IB") > -1) && ((courses[i].indexOf("Theory") == -1) && (courses[i].indexOf("Physical") == -1) && (courses[i].indexOf("Health") == -1)))){
       gpas.push(advanced[grades[i]]);
     }
     else if((courses[i].indexOf("Honors") > -1) || (courses[i].indexOf("Advanced") > -1)){
@@ -89,7 +89,7 @@ $(function () {
   for(let i = 0; i < courses.length; i+=1){
     qualityPoints += gpas[i] * credits[i];
   }
-  let gpa = qualityPoints / total_credits;
+  const gpa = qualityPoints / total_credits;
 
   // add gpa to page
   grades_and_classes[0].cells[3].innerHTML += "<br>GPA: " + gpa.toFixed(2);
